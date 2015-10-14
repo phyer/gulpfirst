@@ -1,0 +1,1451 @@
+.
+├── node_modules
+│   └── gulp
+│       ├── bin
+│       │   └── gulp.js
+│       ├── CHANGELOG.md
+│       ├── completion
+│       │   ├── bash
+│       │   ├── fish
+│       │   ├── powershell
+│       │   ├── README.md
+│       │   └── zsh
+│       ├── index.js
+│       ├── lib
+│       │   ├── completion.js
+│       │   └── taskTree.js
+│       ├── LICENSE
+│       ├── node_modules
+│       │   ├── archy
+│       │   │   ├── examples
+│       │   │   │   ├── beep.js
+│       │   │   │   └── multi_line.js
+│       │   │   ├── index.js
+│       │   │   ├── LICENSE
+│       │   │   ├── package.json
+│       │   │   ├── readme.markdown
+│       │   │   └── test
+│       │   │       ├── beep.js
+│       │   │       ├── multi_line.js
+│       │   │       └── non_unicode.js
+│       │   ├── chalk
+│       │   │   ├── index.js
+│       │   │   ├── node_modules
+│       │   │   │   ├── ansi-styles
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── readme.md
+│       │   │   │   ├── escape-string-regexp
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── readme.md
+│       │   │   │   ├── has-ansi
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── node_modules
+│       │   │   │   │   │   └── ansi-regex
+│       │   │   │   │   │       ├── index.js
+│       │   │   │   │   │       ├── package.json
+│       │   │   │   │   │       └── readme.md
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── readme.md
+│       │   │   │   ├── strip-ansi
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── node_modules
+│       │   │   │   │   │   └── ansi-regex
+│       │   │   │   │   │       ├── index.js
+│       │   │   │   │   │       ├── package.json
+│       │   │   │   │   │       └── readme.md
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── readme.md
+│       │   │   │   └── supports-color
+│       │   │   │       ├── index.js
+│       │   │   │       ├── package.json
+│       │   │   │       └── readme.md
+│       │   │   ├── package.json
+│       │   │   └── readme.md
+│       │   ├── deprecated
+│       │   │   ├── index.js
+│       │   │   ├── LICENSE
+│       │   │   ├── package.json
+│       │   │   ├── README.md
+│       │   │   └── test
+│       │   │       ├── field.js
+│       │   │       └── method.js
+│       │   ├── gulp-util
+│       │   │   ├── index.js
+│       │   │   ├── lib
+│       │   │   │   ├── buffer.js
+│       │   │   │   ├── combine.js
+│       │   │   │   ├── env.js
+│       │   │   │   ├── isBuffer.js
+│       │   │   │   ├── isNull.js
+│       │   │   │   ├── isStream.js
+│       │   │   │   ├── log.js
+│       │   │   │   ├── noop.js
+│       │   │   │   ├── PluginError.js
+│       │   │   │   └── template.js
+│       │   │   ├── LICENSE
+│       │   │   ├── node_modules
+│       │   │   │   ├── array-differ
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── readme.md
+│       │   │   │   ├── array-uniq
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── readme.md
+│       │   │   │   ├── beeper
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── license
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── readme.md
+│       │   │   │   ├── dateformat
+│       │   │   │   │   ├── bin
+│       │   │   │   │   │   └── cli.js
+│       │   │   │   │   ├── lib
+│       │   │   │   │   │   └── dateformat.js
+│       │   │   │   │   ├── LICENSE
+│       │   │   │   │   ├── node_modules
+│       │   │   │   │   │   ├── get-stdin
+│       │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │   │   ├── license
+│       │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   └── readme.md
+│       │   │   │   │   │   └── meow
+│       │   │   │   │   │       ├── index.js
+│       │   │   │   │   │       ├── license
+│       │   │   │   │   │       ├── node_modules
+│       │   │   │   │   │       │   ├── camelcase-keys
+│       │   │   │   │   │       │   │   ├── index.js
+│       │   │   │   │   │       │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │   ├── camelcase
+│       │   │   │   │   │       │   │   │   │   ├── index.js
+│       │   │   │   │   │       │   │   │   │   ├── license
+│       │   │   │   │   │       │   │   │   │   ├── package.json
+│       │   │   │   │   │       │   │   │   │   └── readme.md
+│       │   │   │   │   │       │   │   │   └── map-obj
+│       │   │   │   │   │       │   │   │       ├── index.js
+│       │   │   │   │   │       │   │   │       ├── license
+│       │   │   │   │   │       │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │       └── readme.md
+│       │   │   │   │   │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   └── readme.md
+│       │   │   │   │   │       │   ├── loud-rejection
+│       │   │   │   │   │       │   │   ├── index.js
+│       │   │   │   │   │       │   │   ├── license
+│       │   │   │   │   │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   └── readme.md
+│       │   │   │   │   │       │   ├── normalize-package-data
+│       │   │   │   │   │       │   │   ├── AUTHORS
+│       │   │   │   │   │       │   │   ├── lib
+│       │   │   │   │   │       │   │   │   ├── extract_description.js
+│       │   │   │   │   │       │   │   │   ├── fixer.js
+│       │   │   │   │   │       │   │   │   ├── make_warning.js
+│       │   │   │   │   │       │   │   │   ├── normalize.js
+│       │   │   │   │   │       │   │   │   ├── safe_format.js
+│       │   │   │   │   │       │   │   │   ├── typos.json
+│       │   │   │   │   │       │   │   │   └── warning_messages.json
+│       │   │   │   │   │       │   │   ├── LICENSE
+│       │   │   │   │   │       │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │   ├── hosted-git-info
+│       │   │   │   │   │       │   │   │   │   ├── git-host-info.js
+│       │   │   │   │   │       │   │   │   │   ├── git-host.js
+│       │   │   │   │   │       │   │   │   │   ├── index.js
+│       │   │   │   │   │       │   │   │   │   ├── LICENSE
+│       │   │   │   │   │       │   │   │   │   ├── package.json
+│       │   │   │   │   │       │   │   │   │   ├── README.md
+│       │   │   │   │   │       │   │   │   │   └── test
+│       │   │   │   │   │       │   │   │   │       ├── basic.js
+│       │   │   │   │   │       │   │   │   │       ├── bitbucket-https-with-embedded-auth.js
+│       │   │   │   │   │       │   │   │   │       ├── bitbucket.js
+│       │   │   │   │   │       │   │   │   │       ├── gist.js
+│       │   │   │   │   │       │   │   │   │       ├── github.js
+│       │   │   │   │   │       │   │   │   │       ├── gitlab.js
+│       │   │   │   │   │       │   │   │   │       ├── https-with-inline-auth.js
+│       │   │   │   │   │       │   │   │   │       └── lib
+│       │   │   │   │   │       │   │   │   │           └── standard-tests.js
+│       │   │   │   │   │       │   │   │   ├── is-builtin-module
+│       │   │   │   │   │       │   │   │   │   ├── index.js
+│       │   │   │   │   │       │   │   │   │   ├── license
+│       │   │   │   │   │       │   │   │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │   │   │   └── builtin-modules
+│       │   │   │   │   │       │   │   │   │   │       ├── builtin-modules.json
+│       │   │   │   │   │       │   │   │   │   │       ├── index.js
+│       │   │   │   │   │       │   │   │   │   │       ├── license
+│       │   │   │   │   │       │   │   │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │   │   │       ├── readme.md
+│       │   │   │   │   │       │   │   │   │   │       └── static.js
+│       │   │   │   │   │       │   │   │   │   ├── package.json
+│       │   │   │   │   │       │   │   │   │   └── readme.md
+│       │   │   │   │   │       │   │   │   └── validate-npm-package-license
+│       │   │   │   │   │       │   │   │       ├── index.js
+│       │   │   │   │   │       │   │   │       ├── LICENSE
+│       │   │   │   │   │       │   │   │       ├── node_modules
+│       │   │   │   │   │       │   │   │       │   ├── spdx-correct
+│       │   │   │   │   │       │   │   │       │   │   ├── index.js
+│       │   │   │   │   │       │   │   │       │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │       │   │   │   └── spdx-license-ids
+│       │   │   │   │   │       │   │   │       │   │   │       ├── LICENSE
+│       │   │   │   │   │       │   │   │       │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │       │   │   │       ├── README.md
+│       │   │   │   │   │       │   │   │       │   │   │       └── spdx-license-ids.json
+│       │   │   │   │   │       │   │   │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   │       │   │   └── README.md
+│       │   │   │   │   │       │   │   │       │   └── spdx-expression-parse
+│       │   │   │   │   │       │   │   │       │       ├── index.js
+│       │   │   │   │   │       │   │   │       │       ├── LICENSE
+│       │   │   │   │   │       │   │   │       │       ├── node_modules
+│       │   │   │   │   │       │   │   │       │       │   ├── spdx-exceptions
+│       │   │   │   │   │       │   │   │       │       │   │   ├── index.json
+│       │   │   │   │   │       │   │   │       │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   │       │       │   │   └── README.md
+│       │   │   │   │   │       │   │   │       │       │   └── spdx-license-ids
+│       │   │   │   │   │       │   │   │       │       │       ├── LICENSE
+│       │   │   │   │   │       │   │   │       │       │       ├── package.json
+│       │   │   │   │   │       │   │   │       │       │       ├── README.md
+│       │   │   │   │   │       │   │   │       │       │       └── spdx-license-ids.json
+│       │   │   │   │   │       │   │   │       │       ├── package.json
+│       │   │   │   │   │       │   │   │       │       ├── parser.generated.js
+│       │   │   │   │   │       │   │   │       │       └── README.md
+│       │   │   │   │   │       │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │       └── README.md
+│       │   │   │   │   │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   ├── README.md
+│       │   │   │   │   │       │   │   └── test
+│       │   │   │   │   │       │   │       ├── basic.js
+│       │   │   │   │   │       │   │       ├── consistency.js
+│       │   │   │   │   │       │   │       ├── dependencies.js
+│       │   │   │   │   │       │   │       ├── fixtures
+│       │   │   │   │   │       │   │       │   ├── async.json
+│       │   │   │   │   │       │   │       │   ├── badscripts.json
+│       │   │   │   │   │       │   │       │   ├── bcrypt.json
+│       │   │   │   │   │       │   │       │   ├── coffee-script.json
+│       │   │   │   │   │       │   │       │   ├── http-server.json
+│       │   │   │   │   │       │   │       │   ├── movefile.json
+│       │   │   │   │   │       │   │       │   ├── node-module_exist.json
+│       │   │   │   │   │       │   │       │   ├── no-description.json
+│       │   │   │   │   │       │   │       │   ├── npm.json
+│       │   │   │   │   │       │   │       │   ├── read-package-json.json
+│       │   │   │   │   │       │   │       │   ├── request.json
+│       │   │   │   │   │       │   │       │   └── underscore.json
+│       │   │   │   │   │       │   │       ├── github-urls.js
+│       │   │   │   │   │       │   │       ├── mixedcase-names.js
+│       │   │   │   │   │       │   │       ├── normalize.js
+│       │   │   │   │   │       │   │       ├── scoped.js
+│       │   │   │   │   │       │   │       ├── scripts.js
+│       │   │   │   │   │       │   │       ├── strict.js
+│       │   │   │   │   │       │   │       └── typo.js
+│       │   │   │   │   │       │   ├── object-assign
+│       │   │   │   │   │       │   │   ├── index.js
+│       │   │   │   │   │       │   │   ├── license
+│       │   │   │   │   │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   └── readme.md
+│       │   │   │   │   │       │   ├── read-pkg-up
+│       │   │   │   │   │       │   │   ├── index.js
+│       │   │   │   │   │       │   │   ├── license
+│       │   │   │   │   │       │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │   ├── find-up
+│       │   │   │   │   │       │   │   │   │   ├── index.js
+│       │   │   │   │   │       │   │   │   │   ├── license
+│       │   │   │   │   │       │   │   │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │   │   │   ├── path-exists
+│       │   │   │   │   │       │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │       │   │   │   │   │   │   ├── license
+│       │   │   │   │   │       │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │       │   │   │   │   │   │   └── readme.md
+│       │   │   │   │   │       │   │   │   │   │   └── pinkie-promise
+│       │   │   │   │   │       │   │   │   │   │       ├── index.js
+│       │   │   │   │   │       │   │   │   │   │       ├── node_modules
+│       │   │   │   │   │       │   │   │   │   │       │   └── pinkie
+│       │   │   │   │   │       │   │   │   │   │       │       ├── index.js
+│       │   │   │   │   │       │   │   │   │   │       │       ├── package.json
+│       │   │   │   │   │       │   │   │   │   │       │       └── readme.md
+│       │   │   │   │   │       │   │   │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │   │   │       └── readme.md
+│       │   │   │   │   │       │   │   │   │   ├── package.json
+│       │   │   │   │   │       │   │   │   │   └── readme.md
+│       │   │   │   │   │       │   │   │   └── read-pkg
+│       │   │   │   │   │       │   │   │       ├── index.js
+│       │   │   │   │   │       │   │   │       ├── license
+│       │   │   │   │   │       │   │   │       ├── node_modules
+│       │   │   │   │   │       │   │   │       │   ├── load-json-file
+│       │   │   │   │   │       │   │   │       │   │   ├── index.js
+│       │   │   │   │   │       │   │   │       │   │   ├── license
+│       │   │   │   │   │       │   │   │       │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │       │   │   │   ├── graceful-fs
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── fs.js
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── graceful-fs.js
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── legacy-streams.js
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── LICENSE
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── package.json
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── polyfills.js
+│       │   │   │   │   │       │   │   │       │   │   │   │   └── README.md
+│       │   │   │   │   │       │   │   │       │   │   │   ├── parse-json
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── index.js
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── license
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │       │   │   │   │   │   └── error-ex
+│       │   │   │   │   │       │   │   │       │   │   │   │   │       ├── index.js
+│       │   │   │   │   │       │   │   │       │   │   │   │   │       ├── LICENSE
+│       │   │   │   │   │       │   │   │       │   │   │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │       │   │   │   │   │       └── README.md
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── package.json
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── readme.md
+│       │   │   │   │   │       │   │   │       │   │   │   │   └── vendor
+│       │   │   │   │   │       │   │   │       │   │   │   │       ├── parse.js
+│       │   │   │   │   │       │   │   │       │   │   │   │       └── unicode.js
+│       │   │   │   │   │       │   │   │       │   │   │   ├── pify
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── index.js
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── license
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── package.json
+│       │   │   │   │   │       │   │   │       │   │   │   │   └── readme.md
+│       │   │   │   │   │       │   │   │       │   │   │   ├── pinkie-promise
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── index.js
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │       │   │   │   │   │   └── pinkie
+│       │   │   │   │   │       │   │   │       │   │   │   │   │       ├── index.js
+│       │   │   │   │   │       │   │   │       │   │   │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │       │   │   │   │   │       └── readme.md
+│       │   │   │   │   │       │   │   │       │   │   │   │   ├── package.json
+│       │   │   │   │   │       │   │   │       │   │   │   │   └── readme.md
+│       │   │   │   │   │       │   │   │       │   │   │   └── strip-bom
+│       │   │   │   │   │       │   │   │       │   │   │       ├── index.js
+│       │   │   │   │   │       │   │   │       │   │   │       ├── license
+│       │   │   │   │   │       │   │   │       │   │   │       ├── node_modules
+│       │   │   │   │   │       │   │   │       │   │   │       │   └── is-utf8
+│       │   │   │   │   │       │   │   │       │   │   │       │       ├── ansi.txt
+│       │   │   │   │   │       │   │   │       │   │   │       │       ├── is-utf8.js
+│       │   │   │   │   │       │   │   │       │   │   │       │       ├── package.json
+│       │   │   │   │   │       │   │   │       │   │   │       │       ├── README.md
+│       │   │   │   │   │       │   │   │       │   │   │       │       ├── test.js
+│       │   │   │   │   │       │   │   │       │   │   │       │       └── utf8.txt
+│       │   │   │   │   │       │   │   │       │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │       │   │   │       └── readme.md
+│       │   │   │   │   │       │   │   │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   │       │   │   └── readme.md
+│       │   │   │   │   │       │   │   │       │   └── path-type
+│       │   │   │   │   │       │   │   │       │       ├── index.js
+│       │   │   │   │   │       │   │   │       │       ├── license
+│       │   │   │   │   │       │   │   │       │       ├── node_modules
+│       │   │   │   │   │       │   │   │       │       │   ├── graceful-fs
+│       │   │   │   │   │       │   │   │       │       │   │   ├── fs.js
+│       │   │   │   │   │       │   │   │       │       │   │   ├── graceful-fs.js
+│       │   │   │   │   │       │   │   │       │       │   │   ├── legacy-streams.js
+│       │   │   │   │   │       │   │   │       │       │   │   ├── LICENSE
+│       │   │   │   │   │       │   │   │       │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   │       │       │   │   ├── polyfills.js
+│       │   │   │   │   │       │   │   │       │       │   │   └── README.md
+│       │   │   │   │   │       │   │   │       │       │   ├── pify
+│       │   │   │   │   │       │   │   │       │       │   │   ├── index.js
+│       │   │   │   │   │       │   │   │       │       │   │   ├── license
+│       │   │   │   │   │       │   │   │       │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   │       │       │   │   └── readme.md
+│       │   │   │   │   │       │   │   │       │       │   └── pinkie-promise
+│       │   │   │   │   │       │   │   │       │       │       ├── index.js
+│       │   │   │   │   │       │   │   │       │       │       ├── node_modules
+│       │   │   │   │   │       │   │   │       │       │       │   └── pinkie
+│       │   │   │   │   │       │   │   │       │       │       │       ├── index.js
+│       │   │   │   │   │       │   │   │       │       │       │       ├── package.json
+│       │   │   │   │   │       │   │   │       │       │       │       └── readme.md
+│       │   │   │   │   │       │   │   │       │       │       ├── package.json
+│       │   │   │   │   │       │   │   │       │       │       └── readme.md
+│       │   │   │   │   │       │   │   │       │       ├── package.json
+│       │   │   │   │   │       │   │   │       │       └── readme.md
+│       │   │   │   │   │       │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │       └── readme.md
+│       │   │   │   │   │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   └── readme.md
+│       │   │   │   │   │       │   ├── redent
+│       │   │   │   │   │       │   │   ├── index.js
+│       │   │   │   │   │       │   │   ├── license
+│       │   │   │   │   │       │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │   ├── indent-string
+│       │   │   │   │   │       │   │   │   │   ├── index.js
+│       │   │   │   │   │       │   │   │   │   ├── license
+│       │   │   │   │   │       │   │   │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │   │   │   └── repeating
+│       │   │   │   │   │       │   │   │   │   │       ├── index.js
+│       │   │   │   │   │       │   │   │   │   │       ├── license
+│       │   │   │   │   │       │   │   │   │   │       ├── node_modules
+│       │   │   │   │   │       │   │   │   │   │       │   └── is-finite
+│       │   │   │   │   │       │   │   │   │   │       │       ├── index.js
+│       │   │   │   │   │       │   │   │   │   │       │       ├── license
+│       │   │   │   │   │       │   │   │   │   │       │       ├── node_modules
+│       │   │   │   │   │       │   │   │   │   │       │       │   └── number-is-nan
+│       │   │   │   │   │       │   │   │   │   │       │       │       ├── index.js
+│       │   │   │   │   │       │   │   │   │   │       │       │       ├── license
+│       │   │   │   │   │       │   │   │   │   │       │       │       ├── package.json
+│       │   │   │   │   │       │   │   │   │   │       │       │       └── readme.md
+│       │   │   │   │   │       │   │   │   │   │       │       ├── package.json
+│       │   │   │   │   │       │   │   │   │   │       │       └── readme.md
+│       │   │   │   │   │       │   │   │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │   │   │       └── readme.md
+│       │   │   │   │   │       │   │   │   │   ├── package.json
+│       │   │   │   │   │       │   │   │   │   └── readme.md
+│       │   │   │   │   │       │   │   │   └── strip-indent
+│       │   │   │   │   │       │   │   │       ├── cli.js
+│       │   │   │   │   │       │   │   │       ├── index.js
+│       │   │   │   │   │       │   │   │       ├── license
+│       │   │   │   │   │       │   │   │       ├── node_modules
+│       │   │   │   │   │       │   │   │       │   └── get-stdin
+│       │   │   │   │   │       │   │   │       │       ├── index.js
+│       │   │   │   │   │       │   │   │       │       ├── package.json
+│       │   │   │   │   │       │   │   │       │       └── readme.md
+│       │   │   │   │   │       │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │       └── readme.md
+│       │   │   │   │   │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   └── readme.md
+│       │   │   │   │   │       │   └── trim-newlines
+│       │   │   │   │   │       │       ├── index.js
+│       │   │   │   │   │       │       ├── license
+│       │   │   │   │   │       │       ├── package.json
+│       │   │   │   │   │       │       └── readme.md
+│       │   │   │   │   │       ├── package.json
+│       │   │   │   │   │       └── readme.md
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   ├── Readme.md
+│       │   │   │   │   └── test
+│       │   │   │   │       ├── test_dayofweek.js
+│       │   │   │   │       ├── test_formats.js
+│       │   │   │   │       ├── test_isoutcdatetime.js
+│       │   │   │   │       └── weekofyear
+│       │   │   │   │           ├── test_weekofyear.js
+│       │   │   │   │           └── test_weekofyear.sh
+│       │   │   │   ├── lodash._reescape
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── LICENSE.txt
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── README.md
+│       │   │   │   ├── lodash._reevaluate
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── LICENSE.txt
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── README.md
+│       │   │   │   ├── lodash._reinterpolate
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── LICENSE.txt
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── README.md
+│       │   │   │   ├── lodash.template
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── LICENSE
+│       │   │   │   │   ├── node_modules
+│       │   │   │   │   │   ├── lodash._basecopy
+│       │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │   │   ├── LICENSE.txt
+│       │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   └── README.md
+│       │   │   │   │   │   ├── lodash._basetostring
+│       │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │   │   ├── LICENSE
+│       │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   └── README.md
+│       │   │   │   │   │   ├── lodash._basevalues
+│       │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │   │   ├── LICENSE.txt
+│       │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   └── README.md
+│       │   │   │   │   │   ├── lodash.escape
+│       │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │   │   ├── LICENSE.txt
+│       │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   └── README.md
+│       │   │   │   │   │   ├── lodash._isiterateecall
+│       │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │   │   ├── LICENSE.txt
+│       │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   └── README.md
+│       │   │   │   │   │   ├── lodash.keys
+│       │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │   │   ├── LICENSE
+│       │   │   │   │   │   │   ├── node_modules
+│       │   │   │   │   │   │   │   ├── lodash._getnative
+│       │   │   │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │   │   │   │   ├── LICENSE
+│       │   │   │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   │   │   └── README.md
+│       │   │   │   │   │   │   │   ├── lodash.isarguments
+│       │   │   │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │   │   │   │   ├── LICENSE
+│       │   │   │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   │   │   └── README.md
+│       │   │   │   │   │   │   │   └── lodash.isarray
+│       │   │   │   │   │   │   │       ├── index.js
+│       │   │   │   │   │   │   │       ├── LICENSE
+│       │   │   │   │   │   │   │       ├── package.json
+│       │   │   │   │   │   │   │       └── README.md
+│       │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   └── README.md
+│       │   │   │   │   │   ├── lodash.restparam
+│       │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │   │   ├── LICENSE.txt
+│       │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   └── README.md
+│       │   │   │   │   │   └── lodash.templatesettings
+│       │   │   │   │   │       ├── index.js
+│       │   │   │   │   │       ├── LICENSE.txt
+│       │   │   │   │   │       ├── package.json
+│       │   │   │   │   │       └── README.md
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── README.md
+│       │   │   │   ├── multipipe
+│       │   │   │   │   ├── History.md
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── Makefile
+│       │   │   │   │   ├── node_modules
+│       │   │   │   │   │   └── duplexer2
+│       │   │   │   │   │       ├── example.js
+│       │   │   │   │   │       ├── index.js
+│       │   │   │   │   │       ├── LICENSE.md
+│       │   │   │   │   │       ├── node_modules
+│       │   │   │   │   │       │   └── readable-stream
+│       │   │   │   │   │       │       ├── duplex.js
+│       │   │   │   │   │       │       ├── float.patch
+│       │   │   │   │   │       │       ├── lib
+│       │   │   │   │   │       │       │   ├── _stream_duplex.js
+│       │   │   │   │   │       │       │   ├── _stream_passthrough.js
+│       │   │   │   │   │       │       │   ├── _stream_readable.js
+│       │   │   │   │   │       │       │   ├── _stream_transform.js
+│       │   │   │   │   │       │       │   └── _stream_writable.js
+│       │   │   │   │   │       │       ├── LICENSE
+│       │   │   │   │   │       │       ├── node_modules
+│       │   │   │   │   │       │       │   ├── core-util-is
+│       │   │   │   │   │       │       │   │   ├── float.patch
+│       │   │   │   │   │       │       │   │   ├── lib
+│       │   │   │   │   │       │       │   │   │   └── util.js
+│       │   │   │   │   │       │       │   │   ├── package.json
+│       │   │   │   │   │       │       │   │   ├── README.md
+│       │   │   │   │   │       │       │   │   └── util.js
+│       │   │   │   │   │       │       │   ├── inherits
+│       │   │   │   │   │       │       │   │   ├── inherits_browser.js
+│       │   │   │   │   │       │       │   │   ├── inherits.js
+│       │   │   │   │   │       │       │   │   ├── LICENSE
+│       │   │   │   │   │       │       │   │   ├── package.json
+│       │   │   │   │   │       │       │   │   ├── README.md
+│       │   │   │   │   │       │       │   │   └── test.js
+│       │   │   │   │   │       │       │   ├── isarray
+│       │   │   │   │   │       │       │   │   ├── build
+│       │   │   │   │   │       │       │   │   │   └── build.js
+│       │   │   │   │   │       │       │   │   ├── component.json
+│       │   │   │   │   │       │       │   │   ├── index.js
+│       │   │   │   │   │       │       │   │   ├── package.json
+│       │   │   │   │   │       │       │   │   └── README.md
+│       │   │   │   │   │       │       │   └── string_decoder
+│       │   │   │   │   │       │       │       ├── index.js
+│       │   │   │   │   │       │       │       ├── LICENSE
+│       │   │   │   │   │       │       │       ├── package.json
+│       │   │   │   │   │       │       │       └── README.md
+│       │   │   │   │   │       │       ├── package.json
+│       │   │   │   │   │       │       ├── passthrough.js
+│       │   │   │   │   │       │       ├── readable.js
+│       │   │   │   │   │       │       ├── README.md
+│       │   │   │   │   │       │       ├── transform.js
+│       │   │   │   │   │       │       └── writable.js
+│       │   │   │   │   │       ├── package.json
+│       │   │   │   │   │       ├── README.md
+│       │   │   │   │   │       └── test
+│       │   │   │   │   │           └── tests.js
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   ├── Readme.md
+│       │   │   │   │   └── test
+│       │   │   │   │       └── multipipe.js
+│       │   │   │   ├── object-assign
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── readme.md
+│       │   │   │   ├── replace-ext
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── LICENSE
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   ├── README.md
+│       │   │   │   │   └── test
+│       │   │   │   │       └── main.js
+│       │   │   │   ├── through2
+│       │   │   │   │   ├── LICENSE
+│       │   │   │   │   ├── node_modules
+│       │   │   │   │   │   ├── readable-stream
+│       │   │   │   │   │   │   ├── doc
+│       │   │   │   │   │   │   │   ├── stream.markdown
+│       │   │   │   │   │   │   │   └── wg-meetings
+│       │   │   │   │   │   │   │       └── 2015-01-30.md
+│       │   │   │   │   │   │   ├── duplex.js
+│       │   │   │   │   │   │   ├── lib
+│       │   │   │   │   │   │   │   ├── _stream_duplex.js
+│       │   │   │   │   │   │   │   ├── _stream_passthrough.js
+│       │   │   │   │   │   │   │   ├── _stream_readable.js
+│       │   │   │   │   │   │   │   ├── _stream_transform.js
+│       │   │   │   │   │   │   │   └── _stream_writable.js
+│       │   │   │   │   │   │   ├── LICENSE
+│       │   │   │   │   │   │   ├── node_modules
+│       │   │   │   │   │   │   │   ├── core-util-is
+│       │   │   │   │   │   │   │   │   ├── float.patch
+│       │   │   │   │   │   │   │   │   ├── lib
+│       │   │   │   │   │   │   │   │   │   └── util.js
+│       │   │   │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   │   │   ├── README.md
+│       │   │   │   │   │   │   │   │   └── util.js
+│       │   │   │   │   │   │   │   ├── inherits
+│       │   │   │   │   │   │   │   │   ├── inherits_browser.js
+│       │   │   │   │   │   │   │   │   ├── inherits.js
+│       │   │   │   │   │   │   │   │   ├── LICENSE
+│       │   │   │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   │   │   ├── README.md
+│       │   │   │   │   │   │   │   │   └── test.js
+│       │   │   │   │   │   │   │   ├── isarray
+│       │   │   │   │   │   │   │   │   ├── build
+│       │   │   │   │   │   │   │   │   │   └── build.js
+│       │   │   │   │   │   │   │   │   ├── component.json
+│       │   │   │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   │   │   └── README.md
+│       │   │   │   │   │   │   │   ├── process-nextick-args
+│       │   │   │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │   │   │   │   ├── license.md
+│       │   │   │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   │   │   ├── readme.md
+│       │   │   │   │   │   │   │   │   └── test.js
+│       │   │   │   │   │   │   │   ├── string_decoder
+│       │   │   │   │   │   │   │   │   ├── index.js
+│       │   │   │   │   │   │   │   │   ├── LICENSE
+│       │   │   │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   │   │   └── README.md
+│       │   │   │   │   │   │   │   └── util-deprecate
+│       │   │   │   │   │   │   │       ├── browser.js
+│       │   │   │   │   │   │   │       ├── History.md
+│       │   │   │   │   │   │   │       ├── LICENSE
+│       │   │   │   │   │   │   │       ├── node.js
+│       │   │   │   │   │   │   │       ├── package.json
+│       │   │   │   │   │   │   │       └── README.md
+│       │   │   │   │   │   │   ├── package.json
+│       │   │   │   │   │   │   ├── passthrough.js
+│       │   │   │   │   │   │   ├── readable.js
+│       │   │   │   │   │   │   ├── README.md
+│       │   │   │   │   │   │   ├── transform.js
+│       │   │   │   │   │   │   └── writable.js
+│       │   │   │   │   │   └── xtend
+│       │   │   │   │   │       ├── immutable.js
+│       │   │   │   │   │       ├── LICENCE
+│       │   │   │   │   │       ├── Makefile
+│       │   │   │   │   │       ├── mutable.js
+│       │   │   │   │   │       ├── package.json
+│       │   │   │   │   │       ├── README.md
+│       │   │   │   │   │       └── test.js
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   ├── README.md
+│       │   │   │   │   └── through2.js
+│       │   │   │   └── vinyl
+│       │   │   │       ├── index.js
+│       │   │   │       ├── lib
+│       │   │   │       │   ├── cloneBuffer.js
+│       │   │   │       │   ├── inspectStream.js
+│       │   │   │       │   ├── isBuffer.js
+│       │   │   │       │   ├── isNull.js
+│       │   │   │       │   └── isStream.js
+│       │   │   │       ├── LICENSE
+│       │   │   │       ├── node_modules
+│       │   │   │       │   ├── clone
+│       │   │   │       │   │   ├── clone.js
+│       │   │   │       │   │   ├── LICENSE
+│       │   │   │       │   │   ├── package.json
+│       │   │   │       │   │   ├── README.md
+│       │   │   │       │   │   ├── test-apart-ctx.html
+│       │   │   │       │   │   ├── test.html
+│       │   │   │       │   │   └── test.js
+│       │   │   │       │   └── clone-stats
+│       │   │   │       │       ├── index.js
+│       │   │   │       │       ├── LICENSE.md
+│       │   │   │       │       ├── package.json
+│       │   │   │       │       ├── README.md
+│       │   │   │       │       └── test.js
+│       │   │   │       ├── package.json
+│       │   │   │       └── README.md
+│       │   │   ├── package.json
+│       │   │   └── README.md
+│       │   ├── interpret
+│       │   │   ├── CHANGELOG
+│       │   │   ├── index.js
+│       │   │   ├── LICENSE
+│       │   │   ├── package.json
+│       │   │   └── README.md
+│       │   ├── liftoff
+│       │   │   ├── appveyor.yml
+│       │   │   ├── CHANGELOG
+│       │   │   ├── index.js
+│       │   │   ├── lib
+│       │   │   │   ├── build_config_name.js
+│       │   │   │   ├── file_search.js
+│       │   │   │   ├── find_config.js
+│       │   │   │   ├── find_cwd.js
+│       │   │   │   ├── parse_options.js
+│       │   │   │   └── silent_require.js
+│       │   │   ├── LICENSE
+│       │   │   ├── node_modules
+│       │   │   │   ├── extend
+│       │   │   │   │   ├── CHANGELOG.md
+│       │   │   │   │   ├── component.json
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── LICENSE
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── README.md
+│       │   │   │   ├── findup-sync
+│       │   │   │   │   ├── lib
+│       │   │   │   │   │   └── findup-sync.js
+│       │   │   │   │   ├── LICENSE-MIT
+│       │   │   │   │   ├── node_modules
+│       │   │   │   │   │   └── glob
+│       │   │   │   │   │       ├── common.js
+│       │   │   │   │   │       ├── glob.js
+│       │   │   │   │   │       ├── LICENSE
+│       │   │   │   │   │       ├── node_modules
+│       │   │   │   │   │       │   ├── inflight
+│       │   │   │   │   │       │   │   ├── inflight.js
+│       │   │   │   │   │       │   │   ├── LICENSE
+│       │   │   │   │   │       │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │   └── wrappy
+│       │   │   │   │   │       │   │   │       ├── LICENSE
+│       │   │   │   │   │       │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │       ├── README.md
+│       │   │   │   │   │       │   │   │       ├── test
+│       │   │   │   │   │       │   │   │       │   └── basic.js
+│       │   │   │   │   │       │   │   │       └── wrappy.js
+│       │   │   │   │   │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   ├── README.md
+│       │   │   │   │   │       │   │   └── test.js
+│       │   │   │   │   │       │   ├── inherits
+│       │   │   │   │   │       │   │   ├── inherits_browser.js
+│       │   │   │   │   │       │   │   ├── inherits.js
+│       │   │   │   │   │       │   │   ├── LICENSE
+│       │   │   │   │   │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   ├── README.md
+│       │   │   │   │   │       │   │   └── test.js
+│       │   │   │   │   │       │   ├── minimatch
+│       │   │   │   │   │       │   │   ├── LICENSE
+│       │   │   │   │   │       │   │   ├── minimatch.js
+│       │   │   │   │   │       │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │   └── brace-expansion
+│       │   │   │   │   │       │   │   │       ├── example.js
+│       │   │   │   │   │       │   │   │       ├── index.js
+│       │   │   │   │   │       │   │   │       ├── node_modules
+│       │   │   │   │   │       │   │   │       │   ├── balanced-match
+│       │   │   │   │   │       │   │   │       │   │   ├── example.js
+│       │   │   │   │   │       │   │   │       │   │   ├── index.js
+│       │   │   │   │   │       │   │   │       │   │   ├── Makefile
+│       │   │   │   │   │       │   │   │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   │       │   │   ├── README.md
+│       │   │   │   │   │       │   │   │       │   │   └── test
+│       │   │   │   │   │       │   │   │       │   │       └── balanced.js
+│       │   │   │   │   │       │   │   │       │   └── concat-map
+│       │   │   │   │   │       │   │   │       │       ├── example
+│       │   │   │   │   │       │   │   │       │       │   └── map.js
+│       │   │   │   │   │       │   │   │       │       ├── index.js
+│       │   │   │   │   │       │   │   │       │       ├── LICENSE
+│       │   │   │   │   │       │   │   │       │       ├── package.json
+│       │   │   │   │   │       │   │   │       │       ├── README.markdown
+│       │   │   │   │   │       │   │   │       │       └── test
+│       │   │   │   │   │       │   │   │       │           └── map.js
+│       │   │   │   │   │       │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │       └── README.md
+│       │   │   │   │   │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   └── README.md
+│       │   │   │   │   │       │   ├── once
+│       │   │   │   │   │       │   │   ├── LICENSE
+│       │   │   │   │   │       │   │   ├── node_modules
+│       │   │   │   │   │       │   │   │   └── wrappy
+│       │   │   │   │   │       │   │   │       ├── LICENSE
+│       │   │   │   │   │       │   │   │       ├── package.json
+│       │   │   │   │   │       │   │   │       ├── README.md
+│       │   │   │   │   │       │   │   │       ├── test
+│       │   │   │   │   │       │   │   │       │   └── basic.js
+│       │   │   │   │   │       │   │   │       └── wrappy.js
+│       │   │   │   │   │       │   │   ├── once.js
+│       │   │   │   │   │       │   │   ├── package.json
+│       │   │   │   │   │       │   │   ├── README.md
+│       │   │   │   │   │       │   │   └── test
+│       │   │   │   │   │       │   │       └── once.js
+│       │   │   │   │   │       │   └── path-is-absolute
+│       │   │   │   │   │       │       ├── index.js
+│       │   │   │   │   │       │       ├── package.json
+│       │   │   │   │   │       │       └── readme.md
+│       │   │   │   │   │       ├── package.json
+│       │   │   │   │   │       ├── README.md
+│       │   │   │   │   │       └── sync.js
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── README.md
+│       │   │   │   ├── flagged-respawn
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── lib
+│       │   │   │   │   │   ├── reorder.js
+│       │   │   │   │   │   └── respawn.js
+│       │   │   │   │   ├── LICENSE
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   ├── README.md
+│       │   │   │   │   └── test
+│       │   │   │   │       ├── bin
+│       │   │   │   │       │   ├── exit_code.js
+│       │   │   │   │       │   ├── respawner.js
+│       │   │   │   │       │   └── signal.js
+│       │   │   │   │       └── index.js
+│       │   │   │   ├── rechoir
+│       │   │   │   │   ├── CHANGELOG
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── lib
+│       │   │   │   │   │   ├── extension.js
+│       │   │   │   │   │   ├── normalize.js
+│       │   │   │   │   │   └── register.js
+│       │   │   │   │   ├── LICENSE
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── README.md
+│       │   │   │   └── resolve
+│       │   │   │       ├── example
+│       │   │   │       │   ├── async.js
+│       │   │   │       │   └── sync.js
+│       │   │   │       ├── index.js
+│       │   │   │       ├── lib
+│       │   │   │       │   ├── async.js
+│       │   │   │       │   ├── caller.js
+│       │   │   │       │   ├── core.js
+│       │   │   │       │   ├── core.json
+│       │   │   │       │   ├── node-modules-paths.js
+│       │   │   │       │   └── sync.js
+│       │   │   │       ├── LICENSE
+│       │   │   │       ├── package.json
+│       │   │   │       ├── readme.markdown
+│       │   │   │       └── test
+│       │   │   │           ├── core.js
+│       │   │   │           ├── dotdot
+│       │   │   │           │   ├── abc
+│       │   │   │           │   │   └── index.js
+│       │   │   │           │   └── index.js
+│       │   │   │           ├── dotdot.js
+│       │   │   │           ├── faulty_basedir.js
+│       │   │   │           ├── filter.js
+│       │   │   │           ├── filter_sync.js
+│       │   │   │           ├── mock.js
+│       │   │   │           ├── mock_sync.js
+│       │   │   │           ├── module_dir
+│       │   │   │           │   ├── xmodules
+│       │   │   │           │   │   └── aaa
+│       │   │   │           │   │       └── index.js
+│       │   │   │           │   ├── ymodules
+│       │   │   │           │   │   └── aaa
+│       │   │   │           │   │       └── index.js
+│       │   │   │           │   └── zmodules
+│       │   │   │           │       └── bbb
+│       │   │   │           │           ├── main.js
+│       │   │   │           │           └── package.json
+│       │   │   │           ├── module_dir.js
+│       │   │   │           ├── node_path
+│       │   │   │           │   ├── x
+│       │   │   │           │   │   ├── aaa
+│       │   │   │           │   │   │   └── index.js
+│       │   │   │           │   │   └── ccc
+│       │   │   │           │   │       └── index.js
+│       │   │   │           │   └── y
+│       │   │   │           │       ├── bbb
+│       │   │   │           │       │   └── index.js
+│       │   │   │           │       └── ccc
+│       │   │   │           │           └── index.js
+│       │   │   │           ├── node_path.js
+│       │   │   │           ├── nonstring.js
+│       │   │   │           ├── pathfilter
+│       │   │   │           │   └── deep_ref
+│       │   │   │           │       ├── main.js
+│       │   │   │           │       └── node_modules
+│       │   │   │           │           └── deep
+│       │   │   │           │               ├── alt.js
+│       │   │   │           │               ├── deeper
+│       │   │   │           │               │   └── ref.js
+│       │   │   │           │               ├── package.json
+│       │   │   │           │               └── ref.js
+│       │   │   │           ├── pathfilter.js
+│       │   │   │           ├── precedence
+│       │   │   │           │   ├── aaa
+│       │   │   │           │   │   ├── index.js
+│       │   │   │           │   │   └── main.js
+│       │   │   │           │   ├── aaa.js
+│       │   │   │           │   ├── bbb
+│       │   │   │           │   │   └── main.js
+│       │   │   │           │   └── bbb.js
+│       │   │   │           ├── precedence.js
+│       │   │   │           ├── resolver
+│       │   │   │           │   ├── bar
+│       │   │   │           │   │   └── node_modules
+│       │   │   │           │   │       └── foo
+│       │   │   │           │   │           └── index.js
+│       │   │   │           │   ├── baz
+│       │   │   │           │   │   ├── doom.js
+│       │   │   │           │   │   ├── package.json
+│       │   │   │           │   │   └── quux.js
+│       │   │   │           │   ├── biz
+│       │   │   │           │   │   └── node_modules
+│       │   │   │           │   │       ├── garply
+│       │   │   │           │   │       │   ├── lib
+│       │   │   │           │   │       │   │   └── index.js
+│       │   │   │           │   │       │   └── package.json
+│       │   │   │           │   │       ├── grux
+│       │   │   │           │   │       │   └── index.js
+│       │   │   │           │   │       └── tiv
+│       │   │   │           │   │           └── index.js
+│       │   │   │           │   ├── cup.coffee
+│       │   │   │           │   ├── foo.js
+│       │   │   │           │   ├── incorrect_main
+│       │   │   │           │   │   ├── index.js
+│       │   │   │           │   │   └── package.json
+│       │   │   │           │   ├── mug.coffee
+│       │   │   │           │   ├── mug.js
+│       │   │   │           │   ├── other_path
+│       │   │   │           │   │   ├── lib
+│       │   │   │           │   │   │   └── other-lib.js
+│       │   │   │           │   │   └── root.js
+│       │   │   │           │   ├── punycode
+│       │   │   │           │   │   └── node_modules
+│       │   │   │           │   │       └── punycode
+│       │   │   │           │   │           └── index.js
+│       │   │   │           │   ├── quux
+│       │   │   │           │   │   └── foo
+│       │   │   │           │   │       └── index.js
+│       │   │   │           │   └── without_basedir
+│       │   │   │           │       ├── main.js
+│       │   │   │           │       └── node_modules
+│       │   │   │           │           └── mymodule.js
+│       │   │   │           ├── resolver.js
+│       │   │   │           ├── resolver_sync.js
+│       │   │   │           ├── subdirs
+│       │   │   │           │   └── node_modules
+│       │   │   │           │       └── a
+│       │   │   │           │           ├── b
+│       │   │   │           │           │   └── c
+│       │   │   │           │           │       └── x.json
+│       │   │   │           │           └── package.json
+│       │   │   │           └── subdirs.js
+│       │   │   ├── package.json
+│       │   │   ├── README.md
+│       │   │   └── UPGRADING.md
+│       │   ├── minimist
+│       │   │   ├── example
+│       │   │   │   └── parse.js
+│       │   │   ├── index.js
+│       │   │   ├── LICENSE
+│       │   │   ├── package.json
+│       │   │   ├── readme.markdown
+│       │   │   └── test
+│       │   │       ├── all_bool.js
+│       │   │       ├── bool.js
+│       │   │       ├── dash.js
+│       │   │       ├── default_bool.js
+│       │   │       ├── dotted.js
+│       │   │       ├── kv_short.js
+│       │   │       ├── long.js
+│       │   │       ├── num.js
+│       │   │       ├── parse.js
+│       │   │       ├── parse_modified.js
+│       │   │       ├── short.js
+│       │   │       ├── stop_early.js
+│       │   │       ├── unknown.js
+│       │   │       └── whitespace.js
+│       │   ├── orchestrator
+│       │   │   ├── index.js
+│       │   │   ├── lib
+│       │   │   │   └── runTask.js
+│       │   │   ├── LICENSE
+│       │   │   ├── node_modules
+│       │   │   │   ├── end-of-stream
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── node_modules
+│       │   │   │   │   │   └── once
+│       │   │   │   │   │       ├── LICENSE
+│       │   │   │   │   │       ├── node_modules
+│       │   │   │   │   │       │   └── wrappy
+│       │   │   │   │   │       │       ├── LICENSE
+│       │   │   │   │   │       │       ├── package.json
+│       │   │   │   │   │       │       ├── README.md
+│       │   │   │   │   │       │       ├── test
+│       │   │   │   │   │       │       │   └── basic.js
+│       │   │   │   │   │       │       └── wrappy.js
+│       │   │   │   │   │       ├── once.js
+│       │   │   │   │   │       ├── package.json
+│       │   │   │   │   │       ├── README.md
+│       │   │   │   │   │       └── test
+│       │   │   │   │   │           └── once.js
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   ├── README.md
+│       │   │   │   │   └── test.js
+│       │   │   │   ├── sequencify
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── LICENSE
+│       │   │   │   │   ├── package.json
+│       │   │   │   │   └── README.md
+│       │   │   │   └── stream-consume
+│       │   │   │       ├── index.js
+│       │   │   │       ├── package.json
+│       │   │   │       ├── README.md
+│       │   │   │       └── test
+│       │   │   │           └── tests.js
+│       │   │   ├── package.json
+│       │   │   └── README.md
+│       │   ├── pretty-hrtime
+│       │   │   ├── index.js
+│       │   │   ├── LICENSE
+│       │   │   ├── package.json
+│       │   │   └── README.md
+│       │   ├── semver
+│       │   │   ├── bin
+│       │   │   │   └── semver
+│       │   │   ├── foot.js.txt
+│       │   │   ├── head.js.txt
+│       │   │   ├── LICENSE
+│       │   │   ├── Makefile
+│       │   │   ├── package.json
+│       │   │   ├── README.md
+│       │   │   ├── semver.browser.js
+│       │   │   ├── semver.browser.js.gz
+│       │   │   ├── semver.js
+│       │   │   ├── semver.min.js
+│       │   │   ├── semver.min.js.gz
+│       │   │   └── test
+│       │   │       ├── amd.js
+│       │   │       ├── big-numbers.js
+│       │   │       ├── clean.js
+│       │   │       ├── gtr.js
+│       │   │       ├── index.js
+│       │   │       ├── ltr.js
+│       │   │       ├── major-minor-patch.js
+│       │   │       └── no-module.js
+│       │   ├── tildify
+│       │   │   ├── index.js
+│       │   │   ├── license
+│       │   │   ├── node_modules
+│       │   │   │   └── os-homedir
+│       │   │   │       ├── index.js
+│       │   │   │       ├── package.json
+│       │   │   │       └── readme.md
+│       │   │   ├── package.json
+│       │   │   └── readme.md
+│       │   ├── v8flags
+│       │   │   ├── index.js
+│       │   │   ├── LICENSE
+│       │   │   ├── node_modules
+│       │   │   │   └── user-home
+│       │   │   │       ├── cli.js
+│       │   │   │       ├── index.js
+│       │   │   │       ├── package.json
+│       │   │   │       └── readme.md
+│       │   │   ├── package.json
+│       │   │   └── README.md
+│       │   └── vinyl-fs
+│       │       ├── index.js
+│       │       ├── lib
+│       │       │   ├── dest
+│       │       │   │   ├── index.js
+│       │       │   │   └── writeContents
+│       │       │   │       ├── index.js
+│       │       │   │       ├── writeBuffer.js
+│       │       │   │       ├── writeDir.js
+│       │       │   │       └── writeStream.js
+│       │       │   └── src
+│       │       │       ├── getContents
+│       │       │       │   ├── bufferFile.js
+│       │       │       │   ├── index.js
+│       │       │       │   ├── readDir.js
+│       │       │       │   └── streamFile.js
+│       │       │       ├── getStats.js
+│       │       │       └── index.js
+│       │       ├── LICENSE
+│       │       ├── node_modules
+│       │       │   ├── defaults
+│       │       │   │   ├── index.js
+│       │       │   │   ├── LICENSE
+│       │       │   │   ├── node_modules
+│       │       │   │   │   └── clone
+│       │       │   │   │       ├── clone.js
+│       │       │   │   │       ├── LICENSE
+│       │       │   │   │       ├── package.json
+│       │       │   │   │       ├── README.md
+│       │       │   │   │       ├── test-apart-ctx.html
+│       │       │   │   │       ├── test.html
+│       │       │   │   │       └── test.js
+│       │       │   │   ├── package.json
+│       │       │   │   ├── README.md
+│       │       │   │   └── test.js
+│       │       │   ├── glob-stream
+│       │       │   │   ├── index.js
+│       │       │   │   ├── LICENSE
+│       │       │   │   ├── node_modules
+│       │       │   │   │   ├── glob
+│       │       │   │   │   │   ├── common.js
+│       │       │   │   │   │   ├── glob.js
+│       │       │   │   │   │   ├── node_modules
+│       │       │   │   │   │   │   ├── inflight
+│       │       │   │   │   │   │   │   ├── inflight.js
+│       │       │   │   │   │   │   │   ├── LICENSE
+│       │       │   │   │   │   │   │   ├── node_modules
+│       │       │   │   │   │   │   │   │   └── wrappy
+│       │       │   │   │   │   │   │   │       ├── LICENSE
+│       │       │   │   │   │   │   │   │       ├── package.json
+│       │       │   │   │   │   │   │   │       ├── README.md
+│       │       │   │   │   │   │   │   │       ├── test
+│       │       │   │   │   │   │   │   │       │   └── basic.js
+│       │       │   │   │   │   │   │   │       └── wrappy.js
+│       │       │   │   │   │   │   │   ├── package.json
+│       │       │   │   │   │   │   │   ├── README.md
+│       │       │   │   │   │   │   │   └── test.js
+│       │       │   │   │   │   │   ├── inherits
+│       │       │   │   │   │   │   │   ├── inherits_browser.js
+│       │       │   │   │   │   │   │   ├── inherits.js
+│       │       │   │   │   │   │   │   ├── LICENSE
+│       │       │   │   │   │   │   │   ├── package.json
+│       │       │   │   │   │   │   │   ├── README.md
+│       │       │   │   │   │   │   │   └── test.js
+│       │       │   │   │   │   │   └── once
+│       │       │   │   │   │   │       ├── LICENSE
+│       │       │   │   │   │   │       ├── node_modules
+│       │       │   │   │   │   │       │   └── wrappy
+│       │       │   │   │   │   │       │       ├── LICENSE
+│       │       │   │   │   │   │       │       ├── package.json
+│       │       │   │   │   │   │       │       ├── README.md
+│       │       │   │   │   │   │       │       ├── test
+│       │       │   │   │   │   │       │       │   └── basic.js
+│       │       │   │   │   │   │       │       └── wrappy.js
+│       │       │   │   │   │   │       ├── once.js
+│       │       │   │   │   │   │       ├── package.json
+│       │       │   │   │   │   │       ├── README.md
+│       │       │   │   │   │   │       └── test
+│       │       │   │   │   │   │           └── once.js
+│       │       │   │   │   │   ├── package.json
+│       │       │   │   │   │   ├── README.md
+│       │       │   │   │   │   └── sync.js
+│       │       │   │   │   ├── glob2base
+│       │       │   │   │   │   ├── index.js
+│       │       │   │   │   │   ├── LICENSE
+│       │       │   │   │   │   ├── node_modules
+│       │       │   │   │   │   │   └── find-index
+│       │       │   │   │   │   │       ├── index.js
+│       │       │   │   │   │   │       ├── last.js
+│       │       │   │   │   │   │       ├── package.json
+│       │       │   │   │   │   │       └── README.md
+│       │       │   │   │   │   ├── package.json
+│       │       │   │   │   │   └── README.md
+│       │       │   │   │   ├── minimatch
+│       │       │   │   │   │   ├── browser.js
+│       │       │   │   │   │   ├── minimatch.js
+│       │       │   │   │   │   ├── node_modules
+│       │       │   │   │   │   │   └── brace-expansion
+│       │       │   │   │   │   │       ├── example.js
+│       │       │   │   │   │   │       ├── index.js
+│       │       │   │   │   │   │       ├── node_modules
+│       │       │   │   │   │   │       │   ├── balanced-match
+│       │       │   │   │   │   │       │   │   ├── example.js
+│       │       │   │   │   │   │       │   │   ├── index.js
+│       │       │   │   │   │   │       │   │   ├── Makefile
+│       │       │   │   │   │   │       │   │   ├── package.json
+│       │       │   │   │   │   │       │   │   ├── README.md
+│       │       │   │   │   │   │       │   │   └── test
+│       │       │   │   │   │   │       │   │       └── balanced.js
+│       │       │   │   │   │   │       │   └── concat-map
+│       │       │   │   │   │   │       │       ├── example
+│       │       │   │   │   │   │       │       │   └── map.js
+│       │       │   │   │   │   │       │       ├── index.js
+│       │       │   │   │   │   │       │       ├── LICENSE
+│       │       │   │   │   │   │       │       ├── package.json
+│       │       │   │   │   │   │       │       ├── README.markdown
+│       │       │   │   │   │   │       │       └── test
+│       │       │   │   │   │   │       │           └── map.js
+│       │       │   │   │   │   │       ├── package.json
+│       │       │   │   │   │   │       └── README.md
+│       │       │   │   │   │   ├── package.json
+│       │       │   │   │   │   └── README.md
+│       │       │   │   │   ├── ordered-read-streams
+│       │       │   │   │   │   ├── index.js
+│       │       │   │   │   │   ├── LICENSE
+│       │       │   │   │   │   ├── package.json
+│       │       │   │   │   │   ├── README.md
+│       │       │   │   │   │   └── test
+│       │       │   │   │   │       └── main.js
+│       │       │   │   │   └── unique-stream
+│       │       │   │   │       ├── index.js
+│       │       │   │   │       ├── LICENSE
+│       │       │   │   │       ├── package.json
+│       │       │   │   │       ├── README.md
+│       │       │   │   │       └── test
+│       │       │   │   │           └── index.js
+│       │       │   │   ├── package.json
+│       │       │   │   └── README.md
+│       │       │   ├── glob-watcher
+│       │       │   │   ├── index.js
+│       │       │   │   ├── LICENSE
+│       │       │   │   ├── node_modules
+│       │       │   │   │   └── gaze
+│       │       │   │   │       ├── lib
+│       │       │   │   │       │   ├── gaze.js
+│       │       │   │   │       │   └── helper.js
+│       │       │   │   │       ├── LICENSE-MIT
+│       │       │   │   │       ├── node_modules
+│       │       │   │   │       │   └── globule
+│       │       │   │   │       │       ├── Gruntfile.js
+│       │       │   │   │       │       ├── lib
+│       │       │   │   │       │       │   └── globule.js
+│       │       │   │   │       │       ├── LICENSE-MIT
+│       │       │   │   │       │       ├── node_modules
+│       │       │   │   │       │       │   ├── glob
+│       │       │   │   │       │       │   │   ├── examples
+│       │       │   │   │       │       │   │   │   ├── g.js
+│       │       │   │   │       │       │   │   │   └── usr-local.js
+│       │       │   │   │       │       │   │   ├── glob.js
+│       │       │   │   │       │       │   │   ├── LICENSE
+│       │       │   │   │       │       │   │   ├── node_modules
+│       │       │   │   │       │       │   │   │   ├── graceful-fs
+│       │       │   │   │       │       │   │   │   │   ├── graceful-fs.js
+│       │       │   │   │       │       │   │   │   │   ├── LICENSE
+│       │       │   │   │       │       │   │   │   │   ├── package.json
+│       │       │   │   │       │       │   │   │   │   ├── README.md
+│       │       │   │   │       │       │   │   │   │   └── test
+│       │       │   │   │       │       │   │   │   │       ├── open.js
+│       │       │   │   │       │       │   │   │   │       └── ulimit.js
+│       │       │   │   │       │       │   │   │   └── inherits
+│       │       │   │   │       │       │   │   │       ├── inherits.js
+│       │       │   │   │       │       │   │   │       ├── LICENSE
+│       │       │   │   │       │       │   │   │       ├── package.json
+│       │       │   │   │       │       │   │   │       └── README.md
+│       │       │   │   │       │       │   │   ├── package.json
+│       │       │   │   │       │       │   │   ├── README.md
+│       │       │   │   │       │       │   │   └── test
+│       │       │   │   │       │       │   │       ├── 00-setup.js
+│       │       │   │   │       │       │   │       ├── bash-comparison.js
+│       │       │   │   │       │       │   │       ├── bash-results.json
+│       │       │   │   │       │       │   │       ├── cwd-test.js
+│       │       │   │   │       │       │   │       ├── mark.js
+│       │       │   │   │       │       │   │       ├── nocase-nomagic.js
+│       │       │   │   │       │       │   │       ├── pause-resume.js
+│       │       │   │   │       │       │   │       ├── root.js
+│       │       │   │   │       │       │   │       ├── root-nomount.js
+│       │       │   │   │       │       │   │       └── zz-cleanup.js
+│       │       │   │   │       │       │   ├── lodash
+│       │       │   │   │       │       │   │   ├── dist
+│       │       │   │   │       │       │   │   │   ├── lodash.compat.js
+│       │       │   │   │       │       │   │   │   ├── lodash.compat.min.js
+│       │       │   │   │       │       │   │   │   ├── lodash.js
+│       │       │   │   │       │       │   │   │   ├── lodash.min.js
+│       │       │   │   │       │       │   │   │   ├── lodash.underscore.js
+│       │       │   │   │       │       │   │   │   └── lodash.underscore.min.js
+│       │       │   │   │       │       │   │   ├── LICENSE.txt
+│       │       │   │   │       │       │   │   ├── package.json
+│       │       │   │   │       │       │   │   └── README.md
+│       │       │   │   │       │       │   └── minimatch
+│       │       │   │   │       │       │       ├── LICENSE
+│       │       │   │   │       │       │       ├── minimatch.js
+│       │       │   │   │       │       │       ├── node_modules
+│       │       │   │   │       │       │       │   ├── lru-cache
+│       │       │   │   │       │       │       │   │   ├── CONTRIBUTORS
+│       │       │   │   │       │       │       │   │   ├── lib
+│       │       │   │   │       │       │       │   │   │   └── lru-cache.js
+│       │       │   │   │       │       │       │   │   ├── LICENSE
+│       │       │   │   │       │       │       │   │   ├── package.json
+│       │       │   │   │       │       │       │   │   ├── README.md
+│       │       │   │   │       │       │       │   │   └── test
+│       │       │   │   │       │       │       │   │       ├── basic.js
+│       │       │   │   │       │       │       │   │       ├── foreach.js
+│       │       │   │   │       │       │       │   │       ├── memory-leak.js
+│       │       │   │   │       │       │       │   │       └── serialize.js
+│       │       │   │   │       │       │       │   └── sigmund
+│       │       │   │   │       │       │       │       ├── bench.js
+│       │       │   │   │       │       │       │       ├── LICENSE
+│       │       │   │   │       │       │       │       ├── package.json
+│       │       │   │   │       │       │       │       ├── README.md
+│       │       │   │   │       │       │       │       ├── sigmund.js
+│       │       │   │   │       │       │       │       └── test
+│       │       │   │   │       │       │       │           └── basic.js
+│       │       │   │   │       │       │       ├── package.json
+│       │       │   │   │       │       │       ├── README.md
+│       │       │   │   │       │       │       └── test
+│       │       │   │   │       │       │           ├── basic.js
+│       │       │   │   │       │       │           ├── brace-expand.js
+│       │       │   │   │       │       │           ├── caching.js
+│       │       │   │   │       │       │           ├── defaults.js
+│       │       │   │   │       │       │           └── extglob-ending-with-state-char.js
+│       │       │   │   │       │       ├── package.json
+│       │       │   │   │       │       ├── README.md
+│       │       │   │   │       │       └── test
+│       │       │   │   │       │           ├── fixtures
+│       │       │   │   │       │           │   └── expand
+│       │       │   │   │       │           │       ├── css
+│       │       │   │   │       │           │       │   ├── baz.css
+│       │       │   │   │       │           │       │   └── qux.css
+│       │       │   │   │       │           │       ├── deep
+│       │       │   │   │       │           │       │   ├── deeper
+│       │       │   │   │       │           │       │   │   ├── deeper.txt
+│       │       │   │   │       │           │       │   │   └── deepest
+│       │       │   │   │       │           │       │   │       └── deepest.txt
+│       │       │   │   │       │           │       │   └── deep.txt
+│       │       │   │   │       │           │       ├── js
+│       │       │   │   │       │           │       │   ├── bar.js
+│       │       │   │   │       │           │       │   └── foo.js
+│       │       │   │   │       │           │       └── README.md
+│       │       │   │   │       │           └── globule_test.js
+│       │       │   │   │       ├── package.json
+│       │       │   │   │       └── README.md
+│       │       │   │   ├── package.json
+│       │       │   │   ├── README.md
+│       │       │   │   └── test
+│       │       │   │       ├── fixtures
+│       │       │   │       │   └── test.coffee
+│       │       │   │       └── main.js
+│       │       │   ├── graceful-fs
+│       │       │   │   ├── fs.js
+│       │       │   │   ├── graceful-fs.js
+│       │       │   │   ├── LICENSE
+│       │       │   │   ├── package.json
+│       │       │   │   ├── polyfills.js
+│       │       │   │   ├── README.md
+│       │       │   │   └── test
+│       │       │   │       ├── max-open.js
+│       │       │   │       ├── open.js
+│       │       │   │       ├── readdir-sort.js
+│       │       │   │       └── write-then-read.js
+│       │       │   ├── mkdirp
+│       │       │   │   ├── bin
+│       │       │   │   │   ├── cmd.js
+│       │       │   │   │   └── usage.txt
+│       │       │   │   ├── examples
+│       │       │   │   │   └── pow.js
+│       │       │   │   ├── index.js
+│       │       │   │   ├── LICENSE
+│       │       │   │   ├── node_modules
+│       │       │   │   │   └── minimist
+│       │       │   │   │       ├── example
+│       │       │   │   │       │   └── parse.js
+│       │       │   │   │       ├── index.js
+│       │       │   │   │       ├── LICENSE
+│       │       │   │   │       ├── package.json
+│       │       │   │   │       ├── readme.markdown
+│       │       │   │   │       └── test
+│       │       │   │   │           ├── dash.js
+│       │       │   │   │           ├── default_bool.js
+│       │       │   │   │           ├── dotted.js
+│       │       │   │   │           ├── long.js
+│       │       │   │   │           ├── parse.js
+│       │       │   │   │           ├── parse_modified.js
+│       │       │   │   │           ├── short.js
+│       │       │   │   │           └── whitespace.js
+│       │       │   │   ├── package.json
+│       │       │   │   ├── readme.markdown
+│       │       │   │   └── test
+│       │       │   │       ├── chmod.js
+│       │       │   │       ├── clobber.js
+│       │       │   │       ├── mkdirp.js
+│       │       │   │       ├── opts_fs.js
+│       │       │   │       ├── opts_fs_sync.js
+│       │       │   │       ├── perm.js
+│       │       │   │       ├── perm_sync.js
+│       │       │   │       ├── race.js
+│       │       │   │       ├── rel.js
+│       │       │   │       ├── return.js
+│       │       │   │       ├── return_sync.js
+│       │       │   │       ├── root.js
+│       │       │   │       ├── sync.js
+│       │       │   │       ├── umask.js
+│       │       │   │       └── umask_sync.js
+│       │       │   ├── strip-bom
+│       │       │   │   ├── cli.js
+│       │       │   │   ├── index.js
+│       │       │   │   ├── node_modules
+│       │       │   │   │   ├── first-chunk-stream
+│       │       │   │   │   │   ├── index.js
+│       │       │   │   │   │   ├── package.json
+│       │       │   │   │   │   └── readme.md
+│       │       │   │   │   └── is-utf8
+│       │       │   │   │       ├── ansi.txt
+│       │       │   │   │       ├── is-utf8.js
+│       │       │   │   │       ├── package.json
+│       │       │   │   │       ├── README.md
+│       │       │   │   │       ├── test.js
+│       │       │   │   │       └── utf8.txt
+│       │       │   │   ├── package.json
+│       │       │   │   └── readme.md
+│       │       │   ├── through2
+│       │       │   │   ├── LICENSE
+│       │       │   │   ├── node_modules
+│       │       │   │   │   ├── readable-stream
+│       │       │   │   │   │   ├── duplex.js
+│       │       │   │   │   │   ├── lib
+│       │       │   │   │   │   │   ├── _stream_duplex.js
+│       │       │   │   │   │   │   ├── _stream_passthrough.js
+│       │       │   │   │   │   │   ├── _stream_readable.js
+│       │       │   │   │   │   │   ├── _stream_transform.js
+│       │       │   │   │   │   │   └── _stream_writable.js
+│       │       │   │   │   │   ├── LICENSE
+│       │       │   │   │   │   ├── node_modules
+│       │       │   │   │   │   │   ├── core-util-is
+│       │       │   │   │   │   │   │   ├── float.patch
+│       │       │   │   │   │   │   │   ├── lib
+│       │       │   │   │   │   │   │   │   └── util.js
+│       │       │   │   │   │   │   │   ├── package.json
+│       │       │   │   │   │   │   │   ├── README.md
+│       │       │   │   │   │   │   │   └── util.js
+│       │       │   │   │   │   │   ├── inherits
+│       │       │   │   │   │   │   │   ├── inherits_browser.js
+│       │       │   │   │   │   │   │   ├── inherits.js
+│       │       │   │   │   │   │   │   ├── LICENSE
+│       │       │   │   │   │   │   │   ├── package.json
+│       │       │   │   │   │   │   │   ├── README.md
+│       │       │   │   │   │   │   │   └── test.js
+│       │       │   │   │   │   │   ├── isarray
+│       │       │   │   │   │   │   │   ├── build
+│       │       │   │   │   │   │   │   │   └── build.js
+│       │       │   │   │   │   │   │   ├── component.json
+│       │       │   │   │   │   │   │   ├── index.js
+│       │       │   │   │   │   │   │   ├── package.json
+│       │       │   │   │   │   │   │   └── README.md
+│       │       │   │   │   │   │   └── string_decoder
+│       │       │   │   │   │   │       ├── index.js
+│       │       │   │   │   │   │       ├── LICENSE
+│       │       │   │   │   │   │       ├── package.json
+│       │       │   │   │   │   │       └── README.md
+│       │       │   │   │   │   ├── package.json
+│       │       │   │   │   │   ├── passthrough.js
+│       │       │   │   │   │   ├── readable.js
+│       │       │   │   │   │   ├── README.md
+│       │       │   │   │   │   ├── transform.js
+│       │       │   │   │   │   └── writable.js
+│       │       │   │   │   └── xtend
+│       │       │   │   │       ├── immutable.js
+│       │       │   │   │       ├── LICENCE
+│       │       │   │   │       ├── Makefile
+│       │       │   │   │       ├── mutable.js
+│       │       │   │   │       ├── package.json
+│       │       │   │   │       ├── README.md
+│       │       │   │   │       └── test.js
+│       │       │   │   ├── package.json
+│       │       │   │   ├── README.md
+│       │       │   │   └── through2.js
+│       │       │   └── vinyl
+│       │       │       ├── index.js
+│       │       │       ├── lib
+│       │       │       │   ├── cloneBuffer.js
+│       │       │       │   ├── inspectStream.js
+│       │       │       │   ├── isBuffer.js
+│       │       │       │   ├── isNull.js
+│       │       │       │   └── isStream.js
+│       │       │       ├── LICENSE
+│       │       │       ├── node_modules
+│       │       │       │   ├── clone
+│       │       │       │   │   ├── clone.js
+│       │       │       │   │   ├── LICENSE
+│       │       │       │   │   ├── package.json
+│       │       │       │   │   ├── README.md
+│       │       │       │   │   └── test.js
+│       │       │       │   └── clone-stats
+│       │       │       │       ├── index.js
+│       │       │       │       ├── LICENSE.md
+│       │       │       │       ├── package.json
+│       │       │       │       ├── README.md
+│       │       │       │       └── test.js
+│       │       │       ├── package.json
+│       │       │       └── README.md
+│       │       ├── package.json
+│       │       └── README.md
+│       ├── package.json
+│       └── README.md
+├── README.md
+└── tree.txt
+
+385 directories, 1063 files
